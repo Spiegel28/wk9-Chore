@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/wk9-Chore:latest
+    restart: unless-stopped
+    env_file:
+      - wk9-Chore-env
+    ports:
+      - "7045:80"
